@@ -140,7 +140,7 @@ Bisogni degli utenti -> raccolta richieste -> definizione requisiti
 # Relazione
 Una relazione, è un legame logico che permette di aggregare informazioni cioè un insieme di colonne e righe, cioè attributi o campi dato insieme ai rispettivi dati o valori che vi compaiono
 
-#DDL (Data Definition Language) 
+# DDL (Data Definition Language) 
 DDL serve a creare, modificare o eliminare gli oggetti in un database. Sono i comandi DDL a definire la struttura del database e quindi dei dati ivi contenuti. Ma non fornisce gli strumenti per modificare i dati stessi: per tale scopo di usa il DML. L’utente deve avere i permessi necessari per agire sulla struttura del database e questi permessi vengono assegnati tramite il DCL (Data Control Language).
 
 # DML (Data Manipulation Language)
