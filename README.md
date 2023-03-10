@@ -59,3 +59,4 @@ Un SISTEMA INFORMATICO è il sottoinsieme di un sistema
 informativo dedicato al trattamento "automatico" di informazioni
 derivanti dalla gestione di dati archiviati in formato digitale
 
+## Modello gerarchico
