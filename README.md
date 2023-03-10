@@ -59,4 +59,23 @@ Un SISTEMA INFORMATICO è il sottoinsieme di un sistema
 informativo dedicato al trattamento "automatico" di informazioni
 derivanti dalla gestione di dati archiviati in formato digitale
 
-## Modello gerarchico
+# Modello gerarchico
+Ha caratterizzato i primi DBMS, sviluppati verso la
+metà degli anni 60
+
+I dati sono organizzati inrecord connessi tra di loro
+secondo una struttura ad albero
+Dunque, ciascun record può avere un unico padre
+
+Possono esserci più record, su alberi diversi, che rappresentano la
+medesima informazione
+Ciò da luogo a problemi di ridondanza e di continui controlli sulla
+consistenza dei dati
+La manutenzione di un database gerarchico è complessa. Ad esempio:
+
+La cancellazione di un record comporta l’eliminazione di tutti i record
+dipendenti da esso
+L’aggiornamento di un dato richiede la modifica di altri record per garantire la
+consistenza del database
+
+
