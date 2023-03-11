@@ -71,6 +71,8 @@ deve essere efficiente ed efficace.
 - Integrità dei dati
 - Supporto alle transazioni
 - Gestione del dizionario dei dati
+- Efficente 
+- Efficace
 
 
 # Indipendenza fisica
