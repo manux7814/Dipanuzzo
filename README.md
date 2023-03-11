@@ -64,6 +64,14 @@ derivanti dalla gestione di dati archiviati in formato digitale
 è un sistema software in grado di gestire grandi collezioni di dati integrate, condivise e persistenti assicurando
 loro affidabilità e privatezza.
 deve essere efficiente ed efficace.
+#### Caratteristiche 
+- Gestire base di dati
+- Persistenza e consistenza dei dati
+- Privatezza e sicurezza dei dati
+- Integrità dei dati
+- Supporto alle transazioni
+- Gestione del dizionario dei dati
+
 
 # Indipendenza fisica
 è la possibilità di modificare l'organizzazione fisica
@@ -152,3 +160,12 @@ DCL serve a fornire o revocare agli utenti i permessi necessari per poter utiliz
 # DQL (Data Query Language) 
 DQL serve per creare query sui database e sui sistemi informativi da parte degli utenti oltre a rendere possibile l’estrazione di informazioni dal database interrogando la base dei dati interfacciandosi dunque con l’utente e le sue richieste di servizio.
 
+# Query
+### Elenco dei generi di film con la media degli incassi, ordinati per genere
+##### select film.genere, AVG(programmato.incasso) from film inner join incasso on film.CodiceFilm = programmato.CodiceFilm GROUP BY film.Genere
+
+### Elenco degli attori che hanno recitato nei film proiettati dopo il 1-1-2022
+##### select attore.nome from attore inner join interpreta on interpreta.CodiceAttore = attore.CodiceAttore inner join film on film.CodiceFilm = film. CodiceFilm inner join programmato on film.CodiceFilm = programmato.CodiceFilm where programmato.DataProiezione > 1-1-2022
+
+### Il nome e la citta del cinema più capiente (AGGIUNGERE GROUP BY ORDER E LIMIT)
+##### select cinema.Nome, MAX(cinema.Posti) as "capienza", cinema.Citta from cinema group by cinema.Citta order by capienza desc limit 1
